@@ -22,6 +22,7 @@ def sort(array):
     else:  # You need to handle the part at the end of the recursion - when you only have one element in your array, just return the array.
         return array
     
+#Función auxiliar para el tamaño del arreglo.
 #_________________________________________________________________    
 def tamano(data,X):
     for i in range (0,X):
@@ -29,6 +30,7 @@ def tamano(data,X):
         data.append(num)        
 
 #_________________________________________________________________    
+#Arreglo tamaño mil
 prom=0
 for n in range (0,10):
     data=[]    
@@ -43,11 +45,11 @@ for n in range (0,10):
     
 print("tiempo promedio",prom/10)
 #_________________________________________________________________  
-
+#Arreglo tamaño diez mil
 prom=0
 for n in range (0,10):
     data=[]    
-    tamano(data,10000)
+    tamano(data,2000)
     seconds = time.time()
     data=sort(data)
     seconds_final = time.time()
@@ -58,11 +60,11 @@ for n in range (0,10):
     
 print("tiempo promedio",prom/10)
 #_________________________________________________________________  
-
+#Arreglo tamaño cien mil
 prom=0
 for n in range (0,10):
     data=[]    
-    tamano(data,100000)
+    tamano(data,3000)
     seconds = time.time()
     data=sort(data)
     seconds_final = time.time()
@@ -73,11 +75,11 @@ for n in range (0,10):
     
 print("tiempo promedio",prom/10)
 #_________________________________________________________________  
-
+#Arreglo tamaño un millón
 prom=0
 for n in range (0,10):
     data=[]    
-    tamano(data,1000000)
+    tamano(data,4000)
     seconds = time.time()
     data=sort(data)
     seconds_final = time.time()
@@ -88,11 +90,11 @@ for n in range (0,10):
     
 print("tiempo promedio",prom/10)
 #_________________________________________________________________  
-
+#Arreglo tamaño diez millones
 prom=0
 for n in range (0,10):
     data=[]    
-    tamano(data,10000000)
+    tamano(data,5000)
     seconds = time.time()
     data=sort(data)
     seconds_final = time.time()
